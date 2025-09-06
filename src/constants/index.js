@@ -1,0 +1,1 @@
+export const logo = 'https://ioqil.uz/wp-content/uploads/2025/05/faviocn_2.png'
