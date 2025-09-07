@@ -38,7 +38,19 @@ export default {
   methods: {
     submitHandler(e) {
       e.preventDefault()
-      this.$store.dispatch('register')
+      const data = {
+        username: 'oqil223345634ew534',
+        email: 'oqi4322354332ew344l@mail.ru',
+        password: '123456dfsfds',
+      }
+      this.$store.dispatch('register', data)
+        .then(user => {
+          console.log('Registered user:', user);
+          // this.$router.push({ name: 'Home' });
+        })
+        .catch((err) => {
+          console.log('Registration error:', err);
+        });
     },
   },
 }
